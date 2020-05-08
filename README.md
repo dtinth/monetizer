@@ -1,4 +1,4 @@
-# TSDX Bootstrap
+# monetizer
 
 A monetization meta tag manager.
 
@@ -9,8 +9,10 @@ import { monetize } from 'monetizer'
 ## Project goals
 
 - Simple API to integrate with any frontend library or framework.
+- No dependencies.
 - Support single page apps.
 - Support [probabilistic revenue sharing](https://webmonetization.org/docs/probabilistic-rev-sharing).
+- Has TypeScript type definitions bundled.
 
 ## Vanilla JS usage
 
