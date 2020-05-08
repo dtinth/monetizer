@@ -31,5 +31,18 @@
     "tsdx": "^0.13.2",
     "tslib": "^1.11.2",
     "typescript": "^3.8.3"
-  }
+  },
+  "dependencies": {},
+  "description": "A monetization meta tag manager.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtinth/monetizer.git"
+  },
+  "keywords": [
+    "webmonetization"
+  ],
+  "bugs": {
+    "url": "https://github.com/dtinth/monetizer/issues"
+  },
+  "homepage": "https://github.com/dtinth/monetizer#readme"
 }
