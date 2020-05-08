@@ -83,6 +83,10 @@ export class Monetizer {
 
 export const defaultMonetizer = new Monetizer()
 
-export function monetize(options: MonetizationOptions | string) {
+export function monetize(
+  options: MonetizationOptions | string,
+): StopMonetizingFn {
   return defaultMonetizer.monetize(options)
 }
+
+type StopMonetizingFn = () => void

@@ -88,6 +88,24 @@ function Article(props) {
 }
 ```
 
+## API
+
+### `monetize(options: MonetizationOptions | string): function`
+
+Registers a candidate for monetization.
+
+- `options` can be a string that specifies the payment pointer, or an object with these properties:
+  - `content: string` Payment pointer
+  - `weight?: number` Weight for probabilistic revenue sharing (default=1)
+  - `priority?: number` Priority (default=0)
+
+Returns a `function` that, when called, removes the candidate from the registry.
+
+When there are multiple monetization candidates in the registry, the library will choose a winner using these criteria:
+
+- A candidate with the highest priority wins.
+- If there are multiple candidates with the highest priority, a winner will be chosen using weighted random to achieve [probabilistic revenue sharing](https://webmonetization.org/docs/probabilistic-rev-sharing).
+
 ## Local Development
 
 This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
