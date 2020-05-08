@@ -6,6 +6,8 @@ A monetization meta tag manager.
 import { monetize } from 'monetizer'
 ```
 
+Extracted from [the Bemuse monorepo](https://github.com/bemusic/bemuse/tree/5af5512164561df8a4cc03796b409793a4f564a4/packages/monetizer) into a standalone repository.
+
 ## Project goals
 
 - Simple API to integrate with any frontend library or framework.
